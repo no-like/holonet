@@ -1,0 +1,73 @@
+# =============== #
+# Unity generated #
+# =============== #
+/[Tt]emp/
+/[Oo]bj/
+/UnityGenerated/
+/[Ll]ibrary/
+/[Ll]ibrary/*
+/LocalCache/
+Library
+ 
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+*.svd
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+*.tmp
+ 
+# ============ #
+# FMOD #
+# ============ #
+/AudioBank/.unsaved
+/AudioBank/.user
+/AudioBank/.cache
+/AudioBank/.restore
+fmod.log
+fmod_editor.log
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+ehthumbs.db
+Thumbs.db
+/.idea/
+/Properties/
+/_UpgradeReport_Files/
+/*.XML
+/*.htm
+resources.bin
+resources.bin.meta
+
+/Build
+test-results
+/Temp/
+# **/*.meta <—- DON’T DO LIKE THIS, NEVER, EVER
+*.sublime-project
+*.sublime-workspace
+
+Assembly-CSharp-Editor-vs.csproj
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp-firstpass-vs.csproj
+Assembly-CSharp-firstpass.csproj
+Assembly-CSharp-vs.csproj
+Assembly-CSharp.csproj
+Assembly-UnityScript-firstpass-vs.unityproj
+Assembly-UnityScript-firstpass.unityproj
+Assembly-UnityScript-vs.unityproj
+Assembly-UnityScript.unityproj
+
