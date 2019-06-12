@@ -3,6 +3,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using HoloNetwork.Players;
 using Photon.Realtime;
+using UnityEngine;
 
 namespace HoloNetwork.NetworkProviders.Photon {
 

@@ -73,7 +73,8 @@ namespace HoloNetwork.NetworkProviders.Photon {
 
     public void OnJoinedRoom() {
       if (_joinRoomOp == null && _createAndJoinRoomOp == null) return;
-      Debug.Log($"[HOLONET] ROOMS - OnJoinedRoom");
+      Debug.Log(
+        $"[HOLONET] ROOMS - OnJoinedRoom {PhotonNetwork.CurrentRoom}, players count: {PhotonNetwork.CurrentRoom.PlayerCount}");
       HoloNetAppModule.instance.OnConnectedToRoom();
 
       if (_joinRoomOp != null) {
@@ -91,7 +92,7 @@ namespace HoloNetwork.NetworkProviders.Photon {
 
     public void OnJoinRoomFailed(short returnCode, string message) {
       if (_joinRoomOp == null) return;
-      Debug.Log($"[HOLONET] ROOMS - OnJoinRoomFailed {message}");
+      Debug.Log($"[HOLONET] ROOMS - OnJoinRoomFailed {message}. photon return code {returnCode} ");
       _joinRoomOp.isDone = true;
       _joinRoomOp.error = HoloNetError.JOIN_ROOM_FAILED;
       _joinRoomOp.debugMessage = $"Join Room Failed, ServerCode: {returnCode}, Message:{message}";

@@ -59,7 +59,7 @@ namespace HoloNetwork.NetworkProviders.Photon {
 
     public void OnJoinedLobby() {
       if (_connectAsyncOp == null) return;
-      Debug.Log($"[HOLONET] NETWORK - Connected to Lobby");
+      Debug.Log($"[HOLONET] NETWORK - Connected to Lobby {PhotonNetwork.CurrentLobby}");
       if (_connectAsyncOp != null) {
         _connectAsyncOp.isDone = true;
         _connectAsyncOp.InvokeCallback();

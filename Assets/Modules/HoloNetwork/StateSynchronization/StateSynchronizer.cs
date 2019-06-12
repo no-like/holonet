@@ -100,8 +100,8 @@ namespace HoloNetwork.StateSynchronization {
     public IEnumerator WaitAndApplySyncStateCor(AsyncOp asyncOp) {
       if (!HoloNetPlayer.Local.isServer) {
         while (!HasStateToApply()) yield return null;
-
-        var snapshotCreationTime = roomStateToApply.creationTime;
+        var snapshotCreationTime = 
+          roomStateToApply.creationTime;
         ApplyState();
         HoloNetAppModule.instance.messenger.ClearAllMessagesBefore(snapshotCreationTime);
       }

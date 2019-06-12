@@ -39,7 +39,7 @@ namespace HoloNetwork {
       stateSynchronizer = new StateSynchronizer();
       tickSynchronizer = new TickSynchronizer();
       rooms = new RoomsManager();
-
+      
       provider.Init(version);
       objectsManager.Init();
       stateSynchronizer.Init();

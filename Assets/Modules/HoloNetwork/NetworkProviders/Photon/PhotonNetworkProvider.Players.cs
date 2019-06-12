@@ -5,6 +5,7 @@ using HoloNetwork.Messaging.Implementations.ProviderMessages;
 using HoloNetwork.Players;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEngine;
 
 namespace HoloNetwork.NetworkProviders.Photon {
 

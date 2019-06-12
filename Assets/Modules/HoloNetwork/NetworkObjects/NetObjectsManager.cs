@@ -152,7 +152,7 @@ namespace HoloNetwork.NetworkObjects {
       } else {
         _lastAllocatedId = authoredObjects.Max(hno => hno.oid.objectId);
       }
-
+      
       return new HoloNetObjectId(HoloNetAppModule.instance.players.Local.uniqueId, _lastAllocatedId + 1);
     }
 
